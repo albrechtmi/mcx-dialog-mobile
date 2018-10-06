@@ -121,6 +121,10 @@ const mcxDialog = {
 		
 		let cancelBtn = document.createElement("div");
 		cancelBtn.innerText = "取消";
+		//suggestion
+		if(opts.cancelBtnText) {
+			cancelBtn.innerText = opts.cancelBtnText;
+		}		
 		addClass(cancelBtn, "dialog-cancel-button");
 		
 		let sureBtn = document.createElement("div");
